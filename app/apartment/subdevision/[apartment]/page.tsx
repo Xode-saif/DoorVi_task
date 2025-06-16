@@ -2,7 +2,7 @@ import React from 'react'
 import {data} from '@/data/static'
 
 
-type DataKeys = keyof typeof data; //used copilot here
+type DataKeys = keyof typeof data; 
 
 async function Apartment({params}:{params:Promise<{apartment:string}>}) {
     const residents = (await params).apartment;
